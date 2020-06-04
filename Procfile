@@ -1,1 +1,1 @@
-web:sh setup.sh && streamlit run db.py
+web: sh setup.sh && streamlit run db.py
