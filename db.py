@@ -4,7 +4,7 @@ import numpy as np
 import plotly.express as px
 
 
-data_path='D://Tweets.csv'
+data_path='Tweets.csv'
 @st.cache(persist=True)
 def load_data():
     data=pd.read_csv(data_path)
