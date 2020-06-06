@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ed7e653-a3aa-457c-9af2-a85db05c29a0" name="Default Changelist" comment="" />
+    <list default="true" id="8ed7e653-a3aa-457c-9af2-a85db05c29a0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,10 +68,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591257011511">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591408983078">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591257011511" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591408983078" />
     <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1591160799301">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -89,9 +92,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1364" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591162137233" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591253479721">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591408976959">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1591253479721" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1591408976959" />
   </component>
 </project>

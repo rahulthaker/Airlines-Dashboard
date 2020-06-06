@@ -13,9 +13,11 @@ def load_data():
 
 data=load_data()
 st.title('Sentiment analysis of  tweets about US airlines')
+st.markdown('This webapp is created by  Rahul Thaker explore the **sidebar** to start using the app ' \
+            " \n \n Check out my linkedin \n [My Linkedin](https://www.linkedin.com/in/rahul-t-634946141/)")
 st.sidebar.title('Sentiment analysis of tweets ')
 st.sidebar.markdown('This dashboard gives filters and control over the data visuals of tweets 🐦'
-                    'Be sure to uncheck the HIDE button to see visuals')
+                    'Be sure to **uncheck the HIDE** button to see visuals')
 st.sidebar.subheader('show random tweet')
 random_tweet=st.sidebar.radio('Sentiment',('positive','negative','neutral'))
 st.sidebar.markdown(data.query('airline_sentiment == @random_tweet')[['text']].sample(n=1).iat[0,0])
@@ -25,14 +27,14 @@ select=st.sidebar.selectbox('Visualization Type',['Histogram','Pychart'])
 sentiment_count=data['airline_sentiment'].value_counts()
 sentiment_count=pd.DataFrame({'Sentiment':sentiment_count.index,'Tweets':sentiment_count.values})
 
-if not st.sidebar.checkbox('Hide',True):
-    st.markdown('### Nummber of tweets by sentiment')
-    if select== 'Histogram':
-        fig=px.bar(sentiment_count,x='Sentiment',y='Tweets',color='Tweets',height=500)
-        st.plotly_chart(fig)
-    else:
-        fig=px.pie(sentiment_count,values='Tweets',names='Sentiment')
-        st.plotly_chart(fig)
+
+st.markdown('### Nummber of tweets by sentiment')
+if select== 'Histogram':
+    fig=px.bar(sentiment_count,x='Sentiment',y='Tweets',color='Tweets',height=500)
+    st.plotly_chart(fig)
+else:
+    fig=px.pie(sentiment_count,values='Tweets',names='Sentiment')
+    st.plotly_chart(fig)
 
 st.sidebar.subheader('When and where are the users tweeting from?')
 hour=st.sidebar.slider("Hour of day",1,23)
@@ -44,7 +46,7 @@ if not st.sidebar.checkbox('Hide',True,key=1):
     if st.sidebar.checkbox('Show raw data',False):
         st.write(modified_data)
 
-st.sidebar.subheader('Breakdown airline tweets by sentiments')
+st.sidebar.subheader('Breakdown airline tweets by sentiments. **select an option/options** to see visual')
 choice=st.sidebar.multiselect('Pick airlines',['US Airways','United','American','Southwest','Delta','Virgin America'],key=0)
 
 if len(choice)>0:
