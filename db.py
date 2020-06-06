@@ -14,7 +14,7 @@ def load_data():
 data=load_data()
 st.title('Sentiment analysis of  tweets about US airlines')
 st.markdown('This webapp is created by  Rahul Thaker explore the **sidebar** to start using the app ' \
-            " \n \n Check out my linkedin \n [My Linkedin](https://www.linkedin.com/in/rahul-t-634946141/)")
+            " \n \n Check out \n [My Linkedin](https://www.linkedin.com/in/rahul-t-634946141/)")
 st.sidebar.title('Sentiment analysis of tweets ')
 st.sidebar.markdown('This dashboard gives filters and control over the data visuals of tweets 🐦'
                     'Be sure to **uncheck the HIDE** button to see visuals')
